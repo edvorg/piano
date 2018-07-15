@@ -1,0 +1,11 @@
+image: clojure:lein-2.8.1
+
+pages:
+  stage: deploy
+  script:
+  - lein do clean, cljsbuild once min
+  artifacts:
+    paths:
+    - resources/public
+  only:
+  - master
