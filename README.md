@@ -1,6 +1,6 @@
 # piano
 
-Simple in-browser piano.
+Simple in-browser [piano](https://edvorg.gitlab.io/piano/).
 
 ## License
 
