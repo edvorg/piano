@@ -86,7 +86,6 @@
 
 (aset js/window "ontouchstart" (fn [e]
                                  (when (< 1 (aget e "touches" "length"))
-                                   (js/console.log "preventing")
                                    (.preventDefault e))))
 
 (defn on-js-reload [])

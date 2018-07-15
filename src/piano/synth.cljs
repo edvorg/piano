@@ -22,8 +22,6 @@
 (defn stop [note octave]
   (swap! playing update [note octave]
          (fn [{:keys [:note-node :gain-node]}]
-           (js/console.log note-node)
-           (js/console.log gain-node)
            (when note-node
              (.stop note-node)
              (.disconnect note-node))
