@@ -4,8 +4,9 @@ pages:
   stage: deploy
   script:
   - lein do clean, cljsbuild once min
-  - chmod -R og+rw resources/public
-  - mv resources/public public
+  - chmod -R og+rw ./resources/public
+  - rm -rf ./public
+  - cp -r ./resources/public ./public
   artifacts:
     paths:
     - public
