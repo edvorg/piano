@@ -5,8 +5,9 @@ pages:
   script:
   - lein do clean, cljsbuild once min
   - chmod -R og+rw resources/public
+  - mv resources/public public
   artifacts:
     paths:
-    - resources/public
+    - public
   only:
   - master
