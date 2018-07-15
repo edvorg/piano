@@ -1,0 +1,37 @@
+html, body, #app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border: 0;
+}
+
+.key {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+}
+
+.white {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.black {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.note-info {
+  position: absolute;
+  bottom: 0px;
+}
+
+.white.pressed {
+  background: #ccc;
+}
+
+.black.pressed {
+  background: #555;
+}
